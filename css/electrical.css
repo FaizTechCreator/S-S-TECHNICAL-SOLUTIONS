@@ -1,102 +1,44 @@
-/* Base Styles */
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: #ffffff;
-  background: #0f2027;  /* fallback for old browsers */
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  position: relative;
-  min-height: 100vh;
-  overflow-x: hidden;
+.electrical-page {
+  --service-accent: #f4b63d;
+  --service-accent-strong: #d68a00;
+  --service-soft: rgba(255, 224, 162, 0.82);
+  --service-hero: linear-gradient(145deg, rgba(18, 22, 38, 0.9), rgba(88, 54, 4, 0.78));
+  --service-page-bg:
+    radial-gradient(circle at top left, rgba(244, 182, 61, 0.2), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(255, 236, 194, 0.16), transparent 26%),
+    linear-gradient(135deg, #211a11 0%, #3b2b16 48%, #5b431e 100%);
 }
 
-#particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.electrical-page .service-label,
+.electrical-page .section-copy h2,
+.electrical-page .trust-box h2,
+.electrical-page .trust-item h3,
+.electrical-page .back-link,
+.electrical-page .map-header a {
+  color: var(--service-accent);
 }
 
-/* Header Section */
-header {
-  text-align: center;
-  padding: 50px 20px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-bottom: 2px solid #00d1ff;
+.electrical-page .cta-primary {
+  background: linear-gradient(135deg, #ffd77d, var(--service-accent));
+  color: #332100;
 }
 
-header h1 {
-  font-size: 2.5em;
-  color: #00d1ff;
-  margin: 0;
+.electrical-page .cta-secondary {
+  border-color: rgba(255, 223, 151, 0.6);
+  color: #fff8e2;
 }
 
-.tagline {
-  font-size: 1.2em;
-  color: #ccc;
+.electrical-page .highlight-pill,
+.electrical-page .icon-wrap {
+  background: var(--service-soft);
+  color: #4a3211;
 }
 
-/* Section Title */
-.electrical-details h2 {
-  text-align: center;
-  color: #00d1ff;
-  font-size: 2em;
-  margin-bottom: 40px;
-  margin-top: 40px;
+.electrical-page .card,
+.electrical-page .trust-box {
+  border-color: rgba(244, 182, 61, 0.24);
 }
 
-/* Grid of Services */
-.details-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 0 40px 60px;
-}
-
-/* Service Card */
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid #00d1ff;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 15px rgba(0, 209, 255, 0.2);
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 209, 255, 0.5);
-}
-
-.card img {
-  width: 60px;
-  margin-bottom: 15px;
-  filter: invert(1);
-}
-
-.card h3 {
-  color: #00d1ff;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #e0e0e0;
-  font-size: 0.95em;
-  line-height: 1.4;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.7);
-  color: #aaa;
-  font-size: 0.9em;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.electrical-page .card:hover {
+  box-shadow: 0 24px 44px rgba(137, 89, 10, 0.2);
 }
