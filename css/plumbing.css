@@ -1,77 +1,43 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom right, #d0f0c0, #b2dfdb);
-  color: #004d40;
-  overflow-x: hidden;
+.plumbing-page {
+  --service-accent: #2cc6a3;
+  --service-accent-strong: #16826a;
+  --service-soft: rgba(213, 255, 244, 0.84);
+  --service-hero: linear-gradient(145deg, rgba(5, 52, 46, 0.9), rgba(16, 130, 112, 0.74));
+  --service-page-bg:
+    radial-gradient(circle at top left, rgba(44, 198, 163, 0.2), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(214, 255, 244, 0.18), transparent 28%),
+    linear-gradient(135deg, #0d3f38 0%, #12685e 48%, #1a8c7e 100%);
 }
 
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.plumbing-page .service-label,
+.plumbing-page .section-copy h2,
+.plumbing-page .trust-box h2,
+.plumbing-page .trust-item h3,
+.plumbing-page .back-link {
+  color: var(--service-accent);
 }
 
-header {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: rgba(0, 121, 107, 0.9);
-  color: white;
+.plumbing-page .cta-primary {
+  background: linear-gradient(135deg, #9cf3df, var(--service-accent));
+  color: #08372f;
 }
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+.plumbing-page .cta-secondary {
+  border-color: rgba(156, 243, 223, 0.55);
+  color: #ecfffb;
 }
 
-.plumbing-details h2 {
-  text-align: center;
-  color: #00695c;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
+.plumbing-page .highlight-pill,
+.plumbing-page .icon-wrap {
+  background: var(--service-soft);
+  color: #156b5b;
 }
 
-.details-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
+.plumbing-page .card,
+.plumbing-page .trust-box {
+  border-color: rgba(44, 198, 163, 0.24);
 }
 
-.card {
-  background: white;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 150, 136, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 150, 136, 0.4);
-}
-
-.card img {
-  width: 80px;
-  margin-bottom: 1rem;
-}
-
-.card h3 {
-  margin-bottom: 0.5rem;
-  color: #00796b;
-}
-
-.card p {
-  font-size: 1rem;
-  color: #004d40;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #004d40;
-  color: white;
+.plumbing-page .card:hover {
+  box-shadow: 0 24px 44px rgba(14, 112, 94, 0.2);
 }
