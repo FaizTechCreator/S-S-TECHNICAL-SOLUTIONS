@@ -1,77 +1,44 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom right, #b3e5fc, #e1f5fe);
-  color: #004d40;
-  overflow-x: hidden;
+.ac-page {
+  --service-accent: #44c7ff;
+  --service-accent-strong: #0082bd;
+  --service-soft: rgba(212, 243, 255, 0.86);
+  --service-hero: linear-gradient(145deg, rgba(5, 47, 70, 0.9), rgba(0, 128, 176, 0.72));
+  --service-page-bg:
+    radial-gradient(circle at top left, rgba(103, 155, 155, 0.18), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(103, 116, 121, 0.32), transparent 30%),
+    linear-gradient(135deg, #e8f8ff 0%, #565e63 52%, #b5e5fb 100%);
 }
 
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.ac-page .service-label,
+.ac-page .section-copy h2,
+.ac-page .trust-box h2,
+.ac-page .trust-item h3,
+.ac-page .back-link {
+  color: var(--service-accent);
 }
 
-header {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: rgba(0, 131, 143, 0.85);
-  color: white;
+.ac-page .cta-primary {
+  background: linear-gradient(135deg, #a6ebff, var(--service-accent));
+  color: #08324a;
 }
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+.ac-page .cta-secondary {
+  border-color: rgba(164, 234, 255, 0.55);
+  color: #eefbff;
 }
 
-.ac-details h2 {
-  text-align: center;
-  color: #00796b;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
+.ac-page .highlight-pill,
+.ac-page .icon-wrap {
+  background: var(--service-soft);
+  color: #0e5477;
 }
 
-.details-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
+.ac-page .card,
+.ac-page .trust-box {
+  border-color: rgba(68, 199, 255, 0.25);
 }
 
-.card {
-  background: white;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 131, 143, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.ac-page .card:hover {
+  box-shadow: 0 24px 44px rgba(17, 108, 153, 0.2);
 }
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 131, 143, 0.4);
-}
-
-.card img {
-  width: 80px;
-  margin-bottom: 1rem;
-}
-
-.card h3 {
-  margin-bottom: 0.5rem;
-  color: #00695c;
-}
-
-.card p {
-  font-size: 1rem;
-  color: #004d40;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #004d40;
-  color: white;
-}
+ 
